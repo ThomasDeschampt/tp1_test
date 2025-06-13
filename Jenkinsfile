@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Build and Test') {
             steps {
-                bat 'mvn clean compile test jacoco:report'
+                bat 'mvn clean compile test'
             }
         }
     }
